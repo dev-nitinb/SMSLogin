@@ -98,32 +98,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.12" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/linearLayoutCompat4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/half_circle"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="35dp"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_mail_open"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
-            app:layout_constraintVertical_bias="0.0">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:scaleType="fitCenter"
-                android:id="@+id/appCompatImageView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="35dp"
-                android:minWidth="100dp"
-                android:minHeight="100dp"
-                android:src="@drawable/ic_mail_open"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
-                app:layout_constraintVertical_bias="0.26" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
+            app:layout_constraintVertical_bias="0.10" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -138,17 +126,17 @@
             app:layout_constraintVertical_bias="0.13999999" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:textStyle="bold"
             android:id="@+id/appCompatTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter OTP"
             android:textColor="@color/colorCarnation"
             android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat4"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
             app:layout_constraintVertical_bias="0.41000003" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -161,12 +149,14 @@
         android:background="@drawable/rectangle_gradient_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2">
+<!--
+        android:background="@drawable/two_oval_curve"
+-->
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/linearLayoutCompat3"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:background="@drawable/two_oval_curve"
             android:scaleY="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
