@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SMS Login</string>
+    <string name="otp_based_login">OTP BASED LOGIN</string>
+</resources>
